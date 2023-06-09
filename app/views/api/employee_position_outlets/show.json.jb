@@ -1,0 +1,6 @@
+{
+  id: @epo.id,
+  user_id: @epo.user_id,
+  position_id: @epo.position_id,
+  outlet_id: @epo.outlet_id
+}
