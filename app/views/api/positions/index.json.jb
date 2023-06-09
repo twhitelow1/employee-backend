@@ -2,6 +2,6 @@
   {
     id:  position.id,
     name: position.name,
-    description: position.description
+    description: position.description,
   }
 end
