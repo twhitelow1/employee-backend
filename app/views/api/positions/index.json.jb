@@ -1,0 +1,7 @@
+@positions.map do |position|
+  {
+    id:  position.id,
+    name: position.name,
+    description: position.description
+  }
+end

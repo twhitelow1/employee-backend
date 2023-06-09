@@ -1,0 +1,12 @@
+{
+  id: @business.id,
+  name: @business.name,
+  email: @business.email,
+  address: @business.address,
+  city: @business.city,
+  state: @business.state,
+  zip_code: @business.zip_code,
+  logo_url: @business.logo_url,
+  description: @business.description,
+  phone: @business.phone
+}
