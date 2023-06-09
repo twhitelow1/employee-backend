@@ -1,0 +1,8 @@
+@outlets.map do |outlet|
+  {
+    id:  outlet.id,
+    name: outlet.name,
+    description: outlet.description,
+    business_id: outlet.business_id,
+  }
+end

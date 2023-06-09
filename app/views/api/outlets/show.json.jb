@@ -1,0 +1,6 @@
+{
+  id: @outlet.id,
+  name: @outlet.name,
+  business_id: @outlet.business_id,
+  description: @outlet.description
+}
