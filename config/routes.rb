@@ -20,6 +20,12 @@ Rails.application.routes.draw do
     get "/positions/:id" => "positions#show"
     patch "/positions/:id" => "positions#update"
     delete "/positions/:id" => "positions#destroy"
+
+    get "/user_types" => "user_types#index"
+    post "/user_types" => "user_types#create"
+    get "/user_types/:id" => "user_types#show"
+    patch "/user_types/:id" => "user_types#update"
+    delete "/user_types/:id" => "user_types#destroy"
     
   end
 end
