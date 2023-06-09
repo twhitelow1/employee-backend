@@ -1,5 +1,5 @@
 {
-  id: @positions.id,
-  name: @positions.name,
-  description: @positions.description
+  id: @position.id,
+  name: @position.name,
+  description: @position.description
 }

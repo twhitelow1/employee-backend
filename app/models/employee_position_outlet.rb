@@ -1,0 +1,2 @@
+class EmployeePositionOutlet < ApplicationRecord
+end
