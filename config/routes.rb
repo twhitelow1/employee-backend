@@ -27,11 +27,11 @@ Rails.application.routes.draw do
     patch "/user_types/:id" => "user_types#update"
     delete "/user_types/:id" => "user_types#destroy"
 
-    get "/employee_position_outlet" => "employee_position_outlet#index"
-    post "/employee_position_outlet" => "employee_position_outlet#create"
-    get "/employee_position_outlet/:id" => "employee_position_outlet#show"
-    patch "/employee_position_outlet/:id" => "employee_position_outlet#update"
-    delete "/employee_position_outlet/:id" => "employee_position_outlet#destroy"
+    get "/eps" => "employee_position_outlets#index"
+    post "/eps" => "employee_position_outlets#create"
+    get "/eps/:id" => "employee_position_outlets#show"
+    patch "/eps/:id" => "employee_position_outlets#update"
+    delete "/eps/:id" => "employee_position_outlets#destroy"
     
   end
 end

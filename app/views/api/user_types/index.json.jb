@@ -3,3 +3,4 @@
     id: user_type.id,
     name: user_type.name,
   }
+end
