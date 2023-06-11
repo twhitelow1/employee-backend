@@ -46,5 +46,13 @@ Rails.application.routes.draw do
     delete "/schedules/:id" => "schedules#destroy"
 
     post "/users" => "users#create"
+    get "/users/:id" => "users#show"
+    patch "/users/:id" => "users#update"
+    delete "/users/:id" => "users#destroy"
+    get "/users" => "users#index"
+
+    post "/sessions" => "sessions#create"
+    
+
   end
 end
