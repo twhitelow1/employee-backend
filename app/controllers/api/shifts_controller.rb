@@ -14,6 +14,7 @@ class Api::ShiftsController < ApplicationController
       position_id: params[:positionId],
       manager_id: params[:managerId],
       employee_id: params[:employeeId],
+      schedule_id: params[:scheduleId],
       notes: params[:notes],
       short_note: params[:shortNote]
 
@@ -37,6 +38,7 @@ class Api::ShiftsController < ApplicationController
     @shift.position_id = params[:positionId] || @shift.position_id
     @shift.manager_id = params[:managerId] || @shift.manager_id
     @shift.employee_id = params[:employeeId] || @shift.employee_id
+    @shift.schedule_id = params[:scheduleId] || @shift.schedule_id
     @shift.notes = params[:notes] || @shift.notes
     @shift.short_note = params[:shortNote] || @shift.short_note
     @shift.save

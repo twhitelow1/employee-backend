@@ -9,6 +9,7 @@
     positionId: shift.position_id,
     managerId: shift.manager_id,
     employeeId: shift.employee_id,
+    scheduleId: shift.schedule_id,
     notes: shift.notes,
     shortNote: shift.short_note
   }

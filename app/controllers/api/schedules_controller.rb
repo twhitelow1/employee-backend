@@ -6,10 +6,10 @@ class Api::SchedulesController < ApplicationController
 
   def create
     @schedule = Schedule.new(
-      start_date: params[:start_date],
-      end_date: params[:end_date],
+      start_date: Date.parse(params[:startDate]),
+      end_date: Date.parse(params[:endDate]),
       manager_id: params[:managerId],
-      business_id: params[:businessId]
+      business_id: params[:businessId],
     )
     @schedule.save
     render "show.json.jb"
@@ -22,8 +22,8 @@ class Api::SchedulesController < ApplicationController
 
   def update
     @schedule = Schedule.find_by(id: params[:id])
-    @schedule.start_date = params[:start_date] || @schedule.start_date
-    @schedule.end_date = params[:end_date] || @schedule.end_date 
+    @schedule.start_date = Date.parse(params[:startDate]) || @schedule.start_date
+    @schedule.end_date = Date.parse(params[:endDate]) || @schedule.end_date 
     @schedule.manager_id = params[:managerId] || @schedule.manager_id
     @schedule.business_id = params[:businessId] || @schedule.business_id
     @schedule.save

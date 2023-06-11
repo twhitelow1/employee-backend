@@ -1,8 +1,8 @@
 @schedules.map do |schedule|
   {
     id:  schedule.id,
-    scheduleStartDate: schedule.start_date,
-    scheduleEndDate: schedule.end_date,
+    startDate: schedule.start_date,
+    endDate: schedule.end_date,
     managerId: schedule.manager_id, 
     businessId: schedule.business_id
   }
