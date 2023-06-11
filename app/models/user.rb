@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :employee_position_outlets
   has_many :positions, through: :employee_position_outlets
   has_many :outlets, through: :employee_position_outlets
+  has one :user_type
 end

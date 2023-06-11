@@ -13,7 +13,7 @@ class Api::UsersController < ApplicationController
     user = User.new(
       email: params[:email],
       password: params[:password],
-      password_confirmation: params[:password_confirmation],
+      password_confirmation: params[:passwordConfirmation],
       username: params[:username],
       user_type_id: params[:userTypeId],
       first_name: params[:firstName],

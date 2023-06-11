@@ -31,7 +31,7 @@ class Api::ShiftsController < ApplicationController
   def update
     @shift = Shift.find_by(id: params[:id])
     @shift.day = params[:day] || @shift.day
-    @shift.date = params[:date] || @shift.date
+    @shift.date = Date.parse(params[:date]) || @shift.date
     @shift.time_in = params[:timeIn] || @shift.time_in
     @shift.time_out = params[:timeOut] || @shift.time_out
     @shift.outlet_id = params[:outletId] || @shift.outlet_id
