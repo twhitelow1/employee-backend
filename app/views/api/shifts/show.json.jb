@@ -1,0 +1,4 @@
+{
+  id:  @shift.id,
+  name: @shift.date
+}

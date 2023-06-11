@@ -1,0 +1,6 @@
+@shifts.map do |shift|
+  {
+    id:  shift.id,
+    name: shift.date
+  }
+end

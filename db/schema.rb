@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_09_045556) do
+ActiveRecord::Schema.define(version: 2023_06_11_030151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,31 @@ ActiveRecord::Schema.define(version: 2023_06_09_045556) do
   create_table "positions", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "manager_id"
+    t.integer "business_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shifts", force: :cascade do |t|
+    t.string "day"
+    t.date "date"
+    t.datetime "time_in"
+    t.datetime "time_out"
+    t.integer "outlet_id"
+    t.integer "position_id"
+    t.integer "schedule_id"
+    t.integer "manager_id"
+    t.integer "employee_id"
+    t.string "notes"
+    t.string "short_note"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

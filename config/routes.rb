@@ -33,5 +33,16 @@ Rails.application.routes.draw do
     patch "/eps/:id" => "employee_position_outlets#update"
     delete "/eps/:id" => "employee_position_outlets#destroy"
     
+    get "/shifts" => "shifts#index"
+    post "/shifts" => "shifts#create"
+    get "/shifts/:id" => "shifts#show"
+    patch "/shifts/:id" => "shifts#update"
+    delete "/shifts/:id" => "shifts#destroy"
+
+    get "/schedules" => "schedules#index"
+    post "/schedules" => "schedules#create"
+    get "/schedules/:id" => "schedules#show"
+    patch "/schedules/:id" => "schedules#update"
+    delete "/schedules/:id" => "schedules#destroy"
   end
 end

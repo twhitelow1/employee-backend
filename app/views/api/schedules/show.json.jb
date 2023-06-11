@@ -1,0 +1,4 @@
+  {
+    id:  @schedule.id,
+    name: @schedule.start_date
+  }

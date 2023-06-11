@@ -1,0 +1,6 @@
+@schedules.map do |schedule|
+  {
+    id:  schedule.id,
+    name: schedule.start_date,
+  }
+end
