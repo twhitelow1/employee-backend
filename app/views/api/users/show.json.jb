@@ -1,0 +1,17 @@
+{
+  email: @user.email,  
+  username: @user.username,
+  firstName: @user.first_name,
+  lastName: @user.last_name,
+  phone: @user.phone,
+  birthday: @user.birthday,
+  userTypeId: @user.user_type_id,
+  employeePositionOutlets: @user.employee_position_outlets.map do |epo|
+    {
+      id: epo.id,
+      userId: epo.user_id,
+      outletId: epo.outlet_id,
+      positionId: epo.position_id,
+    }
+  end   
+}
