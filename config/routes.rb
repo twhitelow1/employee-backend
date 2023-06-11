@@ -44,5 +44,7 @@ Rails.application.routes.draw do
     get "/schedules/:id" => "schedules#show"
     patch "/schedules/:id" => "schedules#update"
     delete "/schedules/:id" => "schedules#destroy"
+
+    post "/users" => "users#create"
   end
 end

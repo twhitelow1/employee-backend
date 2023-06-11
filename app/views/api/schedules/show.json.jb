@@ -1,4 +1,7 @@
   {
     id:  @schedule.id,
-    name: @schedule.start_date
+    scheduleStartDate: @schedule.start_date,
+    scheduleEndDate: @schedule.end_date,
+    managerId: @schedule.manager_id,
+    businessId: @schedule.business_id
   }

@@ -1,6 +1,15 @@
 @shifts.map do |shift|
   {
     id:  shift.id,
-    name: shift.date
+    day: shift.day,
+    date: shift.date,
+    timeIn: shift.time_in,
+    timeOut: shift.time_out,
+    outletId: shift.outlet_id,
+    positionId: shift.position_id,
+    managerId: shift.manager_id,
+    employeeId: shift.employee_id,
+    notes: shift.notes,
+    shortNote: shift.short_note
   }
 end
