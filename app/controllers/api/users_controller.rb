@@ -32,9 +32,9 @@ class Api::UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @user.email = params[:email] || @user.email
     @user.username = params[:username] || @user.username
-    @user.user_type_id = params[:user_type_id] || @user.user_type_id
-    @user.first_name = params[:first_name] || @user.first_name
-    @user.last_name = params[:last_name] || @user.last_name
+    @user.user_type_id = params[:userTypeId] || @user.user_type_id
+    @user.first_name = params[:firstName] || @user.first_name
+    @user.last_name = params[:lastName] || @user.last_name
     @user.phone = params[:phone] || @user.phone
     @user.birthday = params[:birthday] || @user.birthday
     @user.save

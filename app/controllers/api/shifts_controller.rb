@@ -7,7 +7,7 @@ class Api::ShiftsController < ApplicationController
   def create
     @shift = Shift.new(
       day: params[:day],
-      date: params[:date],
+      date: Date.parse(params[:date]),
       time_in: params[:timeIn],
       time_out: params[:timeOut],
       outlet_id: params[:outletId],
